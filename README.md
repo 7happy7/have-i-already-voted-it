@@ -16,6 +16,7 @@ have-i-already-voted-it-master
     │   └── loader.js
     ├── README.md
     └── manifest.json
+```
 
 # Preview
 ----
