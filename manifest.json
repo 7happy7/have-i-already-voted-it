@@ -1,0 +1,17 @@
+{
+    "name": "Wikidot - Have I already voted it?",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "CHROME EXTENSION FOR DISPLAYING WHETHER YOU'VE ALREADY VOTED THE PAGE ON WIKIDOT.",
+    "author": "7happy7",
+    "permissions": ["storage", "*://*.scp-wiki.net/*", "*://*.wikidot.com/*"],
+    "web_accessible_resources": ["js/*.js"],
+    "content_scripts": [
+        {
+            "matches": ["*://*.scp-wiki.net/*", "*://*.wikidot.com/*"],
+            "js": ["js/loader.js"],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ]
+}
