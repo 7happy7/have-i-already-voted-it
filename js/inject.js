@@ -70,7 +70,7 @@
 
     (async function _f(){
         if(!window.WIKIREQUEST) {
-            setTimeout(_f, 500);
+            return setTimeout(_f, 500);
         }
         var a = await postAjaxModCon({
             'pageId': WIKIREQUEST.info.pageId,
